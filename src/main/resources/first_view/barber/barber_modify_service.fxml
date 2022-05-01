@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1280.0" styleClass="internal_pane" stylesheets="@../DesktopCSS.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="first_view.barber.BarberModifyServiceController">
+   <children>
+      <HBox alignment="CENTER" layoutX="52.0" layoutY="117.0" prefWidth="1146.0" spacing="50.0">
+         <children>
+            <ImageView fitHeight="282.0" fitWidth="275.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../images/barber_chain_logo.jpeg" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="415.0" prefWidth="576.0" spacing="15.0">
+               <children>
+                  <Label lineSpacing="50.0" prefHeight="39.0" prefWidth="390.0">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="388.0">
+                     <children>
+                        <Label prefHeight="23.0" prefWidth="300.0" styleClass="normal_label" text="Nome:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="nameModifyServiceTextField" prefHeight="26.0" prefWidth="261.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="173.0" prefHeight="64.0" prefWidth="388.0">
+                     <children>
+                        <Label prefHeight="23.0" prefWidth="300.0" styleClass="normal_label" text="Prezzo:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="modifyServicePriceTextField" onMouseClicked="#onPricePicked" prefHeight="26.0" prefWidth="261.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="79.0" prefHeight="64.0" prefWidth="388.0">
+                     <children>
+                        <Label prefHeight="23.0" prefWidth="300.0" styleClass="normal_label" text="Descrizione:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="descriptionTextFieldModifyService" prefHeight="26.0" prefWidth="261.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="335.0" prefHeight="64.0" prefWidth="388.0">
+                     <children>
+                        <Label prefHeight="23.0" prefWidth="300.0" styleClass="normal_label" text="Prodotto Utilizzato:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="modifyServiceNameOfUsedProductTextField" prefHeight="26.0" prefWidth="257.0" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="modifyServiceExceptionLabelFirstView" prefHeight="43.0" prefWidth="376.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="408.0" layoutY="10.0" prefWidth="388.0" spacing="30.0">
+               <children>
+                  <ImageView fitHeight="191.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/add_photo.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" text="Aggiungi Foto">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="865.0" layoutY="573.0" spacing="75.0">
+         <children>
+            <Button fx:id="deleteServiceButton" mnemonicParsing="false" onAction="#onButtonClicked" prefHeight="40.0" text="Cancella">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="saveChangesButton" mnemonicParsing="false" onAction="#onButtonClicked" text="Salva Modifiche">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Label prefHeight="39.0" styleClass="title_label" text="Modifica Servizio">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

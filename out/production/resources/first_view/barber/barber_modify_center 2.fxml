@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="first_view.barber.BarberModifyCenterController">
+   <children>
+      <HBox layoutX="46.0" layoutY="1.0" prefHeight="536.0" prefWidth="1160.0" spacing="15.0">
+         <children>
+            <VBox prefHeight="561.0" prefWidth="372.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="97.0" prefWidth="383.0" text="Centro">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="287.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/barber_chain_logo.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="561.0" prefWidth="508.0" spacing="5.0">
+               <children>
+                  <Label prefHeight="132.0" prefWidth="149.0" />
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="129.0" prefHeight="80.0" prefWidth="508.0">
+                     <children>
+                        <Label prefHeight="37.0" prefWidth="189.0" text="Nome:">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="nameCenterTextField" prefHeight="38.0" prefWidth="244.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="508.0">
+                     <children>
+                        <Label prefHeight="37.0" prefWidth="189.0" text="Via:">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="wayCenterTextField" prefHeight="38.0" prefWidth="244.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="148.0" prefHeight="80.0" prefWidth="508.0">
+                     <children>
+                        <Label prefHeight="37.0" prefWidth="189.0" text="Città:">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="cityCenterTextField" prefHeight="38.0" prefWidth="244.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="348.0" prefHeight="80.0" prefWidth="508.0">
+                     <children>
+                        <Label prefHeight="37.0" prefWidth="189.0" text="telefono:">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="phoneCenterTextField" prefHeight="38.0" prefWidth="244.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="482.0" prefHeight="80.0" prefWidth="508.0">
+                     <children>
+                        <Label prefHeight="37.0" prefWidth="189.0" text="durata slot:">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="slotTimeSpinner" prefHeight="38.0" prefWidth="244.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="497.0" prefHeight="80.0" prefWidth="508.0">
+                     <children>
+                        <Label prefHeight="37.0" prefWidth="189.0" text="numero posti:">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="numberOfSeatsSpinner" prefHeight="38.0" prefWidth="244.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="482.0" prefHeight="80.0" prefWidth="508.0">
+                     <children>
+                        <Label prefHeight="37.0" prefWidth="189.0" text="Giorno di chiusura:">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="closedDaysChoiceBox" prefHeight="38.0" prefWidth="244.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="561.0" prefWidth="396.0" spacing="50.0">
+               <children>
+                  <ImageView fitHeight="350.0" fitWidth="317.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/add_photo.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="160.0" text="Aggiungi una foto">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="continueButton" layoutX="1046.0" layoutY="613.0" mnemonicParsing="false" onAction="#onButtonClicked" prefHeight="50.0" prefWidth="160.0" text="Continua">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

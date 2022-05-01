@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="16">
+      <module name="JavaFX" target="16" />
+      <module name="view1.main" target="16" />
+      <module name="view1.test" target="16" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MyBarber2.main" options="--add-exports java.base/jdk.internal.icu.text=it.barbergroup" />
+    </option>
+  </component>
+</project>

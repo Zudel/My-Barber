@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="234.0" prefWidth="540.0" style="-fx-background-color: #dbccc0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <header>
+      <Label text="Seleziona Orario">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+   </header>
+   <content>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="25.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Ora    ">
+                     <padding>
+                        <Insets right="25.0" />
+                     </padding>
+                  </Label>
+                  <Slider fx:id="hourSlider" blockIncrement="1.0" cache="true" majorTickUnit="1.0" max="12.0" min="7.0" minorTickCount="0" prefHeight="38.0" prefWidth="435.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="7.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Minuti">
+                     <padding>
+                        <Insets right="25.0" />
+                     </padding>
+                  </Label>
+                  <Slider fx:id="minuteSlider" blockIncrement="5.0" majorTickUnit="5.0" max="55.0" minorTickCount="0" prefHeight="38.0" prefWidth="435.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </content>
+   <buttonTypes>
+      <ButtonType fx:constant="OK" />
+      <ButtonType fx:constant="CANCEL" />
+   </buttonTypes>
+</DialogPane>

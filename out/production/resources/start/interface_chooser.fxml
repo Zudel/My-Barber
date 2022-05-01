@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <HBox alignment="CENTER" spacing="75.0">
+         <children>
+            <RadioButton fx:id="normalRadio" mnemonicParsing="false" selected="true" text="Normal">
+               <toggleGroup>
+                  <ToggleGroup fx:id="chooserGroup" />
+               </toggleGroup>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="terminalRadio" mnemonicParsing="false" text="Fake Command Line" toggleGroup="$chooserGroup">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></RadioButton>
+         </children>
+      </HBox>
+   </content>
+   <buttonTypes>
+      <ButtonType fx:constant="OK" />
+   </buttonTypes>
+</DialogPane>

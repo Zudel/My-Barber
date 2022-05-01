@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="70.0" layoutY="143.0" spacing="100.0">
+         <children>
+            <HBox alignment="CENTER" spacing="200.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="342.0" prefWidth="627.0" spacing="50.0" style="-fx-font-size: 16;">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" spacing="75.0">
+                           <children>
+                              <Label prefWidth="200.0" style="-fx-font-size: 16;" text="Nome" />
+                              <Label style="-fx-font-size: 16;" text="Lorem Ipsum Dolor" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="75.0">
+                           <children>
+                              <Label prefWidth="200.0" style="-fx-font-size: 16;" text="Cognome" />
+                              <Label style="-fx-font-size: 16;" text="Lorem Ipsum Dolor" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="75.0">
+                           <children>
+                              <Label prefWidth="200.0" style="-fx-font-size: 16;" text="eMail" />
+                              <Label style="-fx-font-size: 16;" text="Lorem Ipsum Dolor" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="75.0">
+                           <children>
+                              <Label prefWidth="200.0" style="-fx-font-size: 16;" text="Indirizzo" />
+                              <Label style="-fx-font-size: 16;" text="Lorem Ipsum Dolor" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="75.0">
+                           <children>
+                              <Label prefWidth="200.0" style="-fx-font-size: 16;" text="Tipo Utente" />
+                              <Label style="-fx-font-size: 16;" text="Lorem Ipsum Dolor" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="75.0">
+                           <children>
+                              <Label prefWidth="200.0" style="-fx-font-size: 16;" text="Password" />
+                              <PasswordField editable="false" prefHeight="48.0" prefWidth="199.0" promptText="Password" text="Lorem Ipsum Dolor" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="312.0" fitWidth="422.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/user_image_placeholder.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="250.0">
+               <children>
+                  <Button mnemonicParsing="false" prefWidth="125.0" text="Cambia Password" />
+                  <Button mnemonicParsing="false" prefWidth="125.0" text="Modifica" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="100.0" layoutY="25.0" text="Area Personale">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

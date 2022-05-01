@@ -1,0 +1,12 @@
+.button{
+    -fx-background-color: black;
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}

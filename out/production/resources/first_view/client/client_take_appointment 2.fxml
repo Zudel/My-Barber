@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_controller.graphic.BookingGraphicController">
+   <children>
+      <TabPane layoutX="-5.0" layoutY="78.0" prefHeight="524.0" prefWidth="906.0" style="-fx-skin: black;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab id="saloonTab" fx:id="saloonTab" text="Nome del salone">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="225.0">
+                     <children>
+                        <VBox alignment="CENTER" layoutX="275.0" prefHeight="314.0" prefWidth="301.0" spacing="30.0" AnchorPane.topAnchor="40.0">
+                           <children>
+                              <TextField fx:id="searchSaloonName" alignment="CENTER" prefHeight="9.0" prefWidth="460.0" />
+                              <Button fx:id="saloonNextButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#onButtonSaloonClicked" prefHeight="24.0" prefWidth="101.0" text="Avanti" />
+                              <Label fx:id="showErr" prefHeight="14.0" prefWidth="301.0" textAlignment="CENTER" />
+                           </children>
+                        </VBox>
+                        <Label layoutX="177.0" layoutY="140.0" text=" Nome salone" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab id="placeTab" fx:id="placeTab" text="Città del salone">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="225.0">
+                     <children>
+                        <VBox alignment="CENTER" layoutX="275.0" prefHeight="314.0" prefWidth="301.0" spacing="30.0" AnchorPane.topAnchor="40.0">
+                           <children>
+                              <TextField fx:id="searchCity" alignment="CENTER" prefHeight="9.0" prefWidth="460.0" />
+                              <Button fx:id="placeNextButton" mnemonicParsing="false" onAction="#onButtonSaloonCityClicked" prefHeight="24.0" prefWidth="101.0" text="Avanti" />
+                              <Label fx:id="showErr2" prefHeight="16.0" prefWidth="383.0" textAlignment="CENTER" />
+                           </children>
+                        </VBox>
+                        <Label layoutX="190.0" layoutY="140.0" text="Città salone" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutY="38.0" prefHeight="30.0" prefWidth="888.0" text="Cerca un salone in base la tua città oppure inserisci il suo nome!">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

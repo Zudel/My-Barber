@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="122.0" prefWidth="267.0" spacing="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/barber_chain_logo.jpeg" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" prefHeight="115.0" prefWidth="157.0" spacing="10.0">
+         <children>
+            <HBox prefHeight="34.0" prefWidth="157.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="61.0" text="Nome:" />
+                  <Label fx:id="serviceNameLabel" layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="81.0" text="&lt;&lt;Nome&gt;&gt;" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="54.0" prefHeight="34.0" prefWidth="157.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="61.0" text="Prezzo:" />
+                  <Label fx:id="servicePriceLabel" layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="81.0" text="&lt;&lt;Prezzo&gt;&gt;" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="76.0" prefHeight="34.0" prefWidth="157.0">
+               <children>
+                  <Label fx:id="indexLabel" prefHeight="34.0" prefWidth="61.0" />
+                  <Label fx:id="indexServiceOfListLabel" layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="81.0" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="10.0" />
+   </padding>
+</HBox>

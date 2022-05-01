@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="125.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="103.0" prefWidth="326.0" spacing="10.0">
+         <children>
+            <ImageView fx:id="productImageView" fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../images/pruduct_image_example.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="122.0" prefWidth="231.0" spacing="10.0">
+               <children>
+                  <Label fx:id="productNameLabel" text="Nome Prodotto">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="productPriceLabel" text="Label" />
+                  <Label fx:id="productIndexLabel">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

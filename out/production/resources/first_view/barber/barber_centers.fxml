@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="754.0" prefWidth="1290.0" styleClass="internal_pane" stylesheets="@../DesktopCSS.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="first_view.barber.BarberCenterController">
+   <children>
+      <HBox alignment="CENTER" layoutX="17.0" layoutY="89.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="1214.0">
+         <children>
+            <ListView fx:id="barberCenterListView" maxWidth="1.7976931348623157E308" prefHeight="472.0" prefWidth="311.0" />
+            <AnchorPane prefHeight="473.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="46.0" layoutY="14.0" prefHeight="458.0" prefWidth="878.0" spacing="35.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="370.0" spacing="100.0">
+                           <children>
+                              <ImageView fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../images/barber_chain_logo.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" spacing="15.0">
+                                 <children>
+                                    <Label prefHeight="75.0" prefWidth="556.0" styleClass="subtitle_label" text="Centro">
+                                       <font>
+                                          <Font size="38.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox layoutX="10.0" layoutY="126.0" prefHeight="46.0" prefWidth="556.0">
+                                       <children>
+                                          <Label prefHeight="100.0" prefWidth="302.0" styleClass="normal_label" text="Nome:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="nameCenterLabelFirstView" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="302.0" styleClass="normal_label">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="46.0" prefWidth="556.0">
+                                       <children>
+                                          <Label prefHeight="100.0" prefWidth="302.0" styleClass="normal_label" text="Via:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="addressCenterLabelFirstView" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="302.0" styleClass="normal_label">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="220.0" prefHeight="46.0" prefWidth="556.0">
+                                       <children>
+                                          <Label prefHeight="100.0" prefWidth="302.0" styleClass="normal_label" text="Città:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cityCenterLabelFirstView" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="302.0" styleClass="normal_label">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="278.0" prefHeight="46.0" prefWidth="556.0">
+                                       <children>
+                                          <Label prefHeight="100.0" prefWidth="302.0" styleClass="normal_label" text="telefono:">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="telephoneCenterLabelFirstView" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="302.0" styleClass="normal_label">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Label alignment="TOP_LEFT" prefHeight="157.0" prefWidth="909.0" text="&#10;" textOverrun="CLIP">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </HBox>
+      <HBox layoutX="741.0" layoutY="582.0" spacing="25.0">
+         <children>
+            <Button fx:id="addCenterButton" mnemonicParsing="false" onAction="#onButtonClicked" text="Aggiungi Centro">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onButtonClicked" text="Rimuovi Centro">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="modifyButton" mnemonicParsing="false" onAction="#onButtonClicked" text="Modifica">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Label styleClass="title_label" text="I tuoi centri">
+         <font>
+            <Font name="Arial" size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

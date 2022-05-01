@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="1280.0" styleClass="internal_pane" stylesheets="@../DesktopCSS.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="first_view.client.ClientCompleteOrderController">
+   <children>
+      <VBox layoutX="701.0" layoutY="91.0" spacing="75.0">
+         <children>
+            <VBox spacing="50.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="25.0">
+                     <children>
+                        <Label prefWidth="200.0" styleClass="normal_label" text="Indirizzo" />
+                        <TextField fx:id="addressField" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="25.0">
+                     <children>
+                        <Label prefWidth="200.0" styleClass="normal_label" text="Telefono" />
+                        <TextField fx:id="telephoneField" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <Label styleClass="normal_label" text="Concludi Ordine" />
+                  <Button fx:id="payWithPaypalButton" mnemonicParsing="false" onAction="#onButtonClicked" prefHeight="30.0" text="Paga con Paypal">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../images/paypal_logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="107.0" layoutY="123.0" prefHeight="490.0" prefWidth="404.0" spacing="50.0">
+         <children>
+            <VBox spacing="35.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="25.0">
+                     <children>
+                        <Label styleClass="normal_label" text="Inserisci Coupon" />
+                        <TextField fx:id="couponCodeField" />
+                        <Button fx:id="addCouponButton" mnemonicParsing="false" onAction="#onButtonClicked">
+                           <graphic>
+                              <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../images/add_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ListView fx:id="couponListView" prefHeight="219.0" prefWidth="402.0" />
+               </children>
+            </VBox>
+            <Label fx:id="orderTotalAmountLabel" styleClass="normal_label" text="Totale Ordine">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="acquiredPointsLabel" styleClass="normal_label" text="Punti Raccolti">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fitHeight="200.0" fitWidth="400.0" layoutX="777.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/AppLogo.png" />
+         </image>
+      </ImageView>
+      <Label styleClass="title_label" text="Concludi Ordine">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="panel" stylesheets="@../fake_terminal_style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="second_view.barber.BarberManageSaloonController">
+   <children>
+      <VBox layoutX="38.0" layoutY="79.0" spacing="25.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="342.0" prefWidth="306.0" spacing="10.0">
+               <children>
+                  <Label styleClass="title_label" text="Manage Saloon">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane prefHeight="261.0" prefWidth="306.0">
+                     <content>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- select saloon &lt;name of saloon&gt;&#10;- overwrite name &lt;new name&gt;&#10;- overwrite address &lt;new address&gt;&#10;- overwrite city &lt;new city&gt;&#10;- overwrite phone number &lt;new phone&gt;&#10;- save changes&#10;- delete&#10;- modify &#10;- add new saloon&#10;- back">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <TextField fx:id="manageSaloonCommandLine" onAction="#onCommand" />
+            <Button fx:id="enterButton" defaultButton="true" mnemonicParsing="false" onAction="#onCommand" prefHeight="0.0" prefWidth="16.0" style="-fx-background-color: transparent;" />
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="509.0" layoutY="47.0" prefHeight="507.0" prefWidth="364.0" spacing="10.0">
+         <children>
+            <ListView fx:id="manageSaloonListView" prefHeight="330.0" prefWidth="364.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="26.0" prefWidth="364.0">
+               <children>
+                  <Label prefWidth="150.0" text="Saloon Name:" />
+                  <TextField fx:id="manageSaloonNameTextField" editable="false" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="365.0" prefHeight="26.0" prefWidth="364.0">
+               <children>
+                  <Label prefWidth="150.0" text="Saloon Address:" />
+                  <TextField fx:id="manageSaloonAddressTextField" editable="false" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="416.0" prefHeight="26.0" prefWidth="364.0">
+               <children>
+                  <Label prefWidth="150.0" text="Saloon City:" />
+                  <TextField fx:id="manageSaloonCityTextField" editable="false" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="422.0" prefHeight="26.0" prefWidth="364.0">
+               <children>
+                  <Label prefWidth="150.0" text="Saloon phone number:" />
+                  <TextField fx:id="manageSaloonPhoneTextField" editable="false" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="458.0" prefHeight="26.0" prefWidth="364.0">
+               <children>
+                  <Label prefWidth="150.0" text="Saloon slot index:" />
+                  <TextField fx:id="manageSaloonSlotIndexTextField" editable="false" prefWidth="200.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="first_view.general.RegisterScreenController">
+   <children>
+      <VBox alignment="CENTER" layoutX="479.0" layoutY="44.0" spacing="30.0">
+         <children>
+            <VBox spacing="50.0">
+               <children>
+                  <VBox spacing="15.0">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label prefWidth="200.0" text="Nome" />
+                              <TextField fx:id="nameText" prefWidth="200.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label prefWidth="200.0" text="Cognome" />
+                              <TextField fx:id="surnameText" prefWidth="200.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label prefWidth="200.0" text="eMail" />
+                              <TextField fx:id="emailText" prefWidth="200.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox spacing="15.0">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label prefWidth="200.0" text="Password" />
+                              <PasswordField fx:id="passText" prefWidth="200.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label prefWidth="200.0" text="Conferma Password" />
+                              <PasswordField fx:id="confirmPassText" prefWidth="200.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" spacing="100.0">
+               <children>
+                  <RadioButton fx:id="clientTypeRadioButton" mnemonicParsing="false" selected="true" text="Cliente">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="userTypeRadioGroup" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="barberTypeRadioButton" mnemonicParsing="false" text="Barbiere" toggleGroup="$userTypeRadioGroup" />
+               </children>
+            </HBox>
+            <Button fx:id="registerButton" mnemonicParsing="false" onAction="#onButtonClicked" prefHeight="30.0" prefWidth="200.0" text="Registrati">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <VBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label text="Oppure" />
+                  <Button fx:id="googleButton" mnemonicParsing="false" onAction="#onButtonClicked" prefHeight="30.0" prefWidth="200.0" text="       Accedi con Google">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../images/google_logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="facebookButton" mnemonicParsing="false" onAction="#onButtonClicked" prefHeight="30.0" prefWidth="200.0" text="   Accedi con Facebook">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../images/facebook_logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Text layoutX="68.0" layoutY="638.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ragionare su utilizzo di due bottoni di Registrazione anzichè di unico bottone" />
+      <ImageView fitHeight="436.0" fitWidth="439.0" layoutX="14.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/AppLogo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onBackClicked" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="19.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../images/back_button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

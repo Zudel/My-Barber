@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="saloonText" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="1290.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="first_view.barber.BarberListAppointmentsController">
+   <children>
+      <Label layoutX="100.0" layoutY="25.0" prefHeight="57.0" prefWidth="621.0" text="Appuntamenti nel tuo salone">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="450.0" layoutY="297.0" prefHeight="167.0" prefWidth="292.0" spacing="100.0">
+         <children>
+            <TextField fx:id="saloonText" prefHeight="36.0" prefWidth="292.0" promptText="inserisci salone" />
+            <DatePicker fx:id="date" prefHeight="38.0" prefWidth="286.0" promptText="Seleziona Giorno" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="217.0" fitWidth="288.0" layoutX="114.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/barber_chain_logo.jpeg" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER_RIGHT" layoutX="844.0" layoutY="123.0" spacing="35.0">
+         <children>
+            <ListView fx:id="appointmentsListView" prefHeight="524.0" prefWidth="391.0" />
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="391.0" textOverrun="CLIP">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="confirmButton" layoutX="450.0" layoutY="639.0" mnemonicParsing="false" onAction="#onConfirm" prefHeight="36.0" prefWidth="304.0" text="Conferma">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

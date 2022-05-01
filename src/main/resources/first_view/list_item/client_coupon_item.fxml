@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER" prefHeight="125.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="104.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/AppLogo.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" prefHeight="105.0" prefWidth="195.0" spacing="25.0">
+         <children>
+            <Label fx:id="couponCodeLabel" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="couponDiscountLabel" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>

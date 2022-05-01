@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="internal_pane" stylesheets="@../DesktopCSS.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_controller.graphic.ScheduleBookingGraphicController">
+   <children>
+      <VBox layoutX="30.0" layoutY="276.0" spacing="50.0">
+         <children>
+            <Label fx:id="dateLabel" prefHeight="24.0" prefWidth="304.0" styleClass="normal_label" text="Label">
+               <graphic>
+                  <Label prefHeight="24.0" prefWidth="107.0" styleClass="normal_label" text="Data">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </graphic>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <HBox prefWidth="200.0" spacing="25.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="91.0" styleClass="normal_label" text="Slot Time">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hourLabelInit" styleClass="normal_label" text="Inizio">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="normal_label" text="-">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hourLabelFinal" styleClass="normal_label" text="Fine">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="849.0" layoutY="88.0" prefHeight="174.0">
+         <children>
+            <ImageView fx:id="saloonImage" fitHeight="194.0" fitWidth="351.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../images/barber_center.jpeg" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="200.0" spacing="36.0">
+               <children>
+                  <Label fx:id="nameSaloonLabel" styleClass="normal_label" text="Label">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <graphic>
+                        <Label styleClass="normal_label" text="Nome">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="addressSaloonLabel" styleClass="normal_label" text="Label">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <graphic>
+                        <Label styleClass="normal_label" text="Indirizzo">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="citySaloonLabel" styleClass="normal_label" text="Label">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <graphic>
+                        <Label styleClass="normal_label" text="Città">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="phoneSaloonLabel" styleClass="normal_label" text="Label">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <graphic>
+                        <Label styleClass="normal_label" text="Telefono">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="481.0" layoutY="88.0" spacing="50.0">
+         <children>
+            <Label styleClass="normal_label" text="Servizi Disponibili">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <ListView fx:id="serviceListView" prefHeight="347.0" prefWidth="250.0" />
+            <Button fx:id="bookedButton" mnemonicParsing="false" onAction="#onButtonSaloonClicked" prefHeight="35.0" prefWidth="250.0" text="Vai al riepilogo" textFill="WHITE" />
+         </children>
+      </VBox>
+      <Label styleClass="title_label" text="Prenota Appuntamento" />
+   </children>
+</AnchorPane>

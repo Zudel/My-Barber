@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="150.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <header>
+      <Label text="Inserire Prezzo">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </Label>
+   </header>
+   <buttonTypes>
+      <ButtonType fx:constant="OK" />
+      <ButtonType fx:constant="CANCEL" />
+   </buttonTypes>
+   <content>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER" spacing="50.0">
+               <children>
+                  <Label prefWidth="75.0" text="Intero" />
+                  <Spinner fx:id="integerSpinner" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="50.0">
+               <children>
+                  <Label prefWidth="75.0" text="Centesimi" />
+                  <Spinner fx:id="centsSpinner" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </content>
+</DialogPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="first_view.barber.BarberManageOrderGUIController">
+   <children>
+      <ListView fx:id="orderListView" layoutX="61.0" layoutY="107.0" prefHeight="550.0" prefWidth="400.0" />
+      <ListView fx:id="orderCartListView" layoutX="690.0" layoutY="107.0" prefHeight="321.0" prefWidth="500.0" />
+      <VBox layoutX="824.0" layoutY="476.0" spacing="25.0">
+         <children>
+            <HBox>
+               <children>
+                  <Label prefWidth="200.0" text="Indirizzo Consegna">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orderAddressLabel">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label prefWidth="200.0" text="Telefono Committente">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orderTelephoneLabel">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label prefWidth="200.0" text="Utente Committente">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orderOwnerLabel">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="confirmOrderButton" layoutX="886.0" layoutY="644.0" mnemonicParsing="false" onAction="#onButtonClicked" text="Conferma Ordine" />
+   </children>
+</AnchorPane>

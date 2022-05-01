@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="second_view.general.SubscribeScreenController">
+   <children>
+      <VBox layoutX="36.0" layoutY="28.0" spacing="25.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="342.0" prefWidth="306.0" spacing="10.0">
+               <children>
+                  <Label text="Menu">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane prefHeight="261.0" prefWidth="306.0">
+                     <content>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- set name &lt;name&gt;&#10;- set surname &lt;surname&gt;&#10;- set email &lt;email&gt;&#10;- set password &lt;password&gt;&#10;- type &lt;B || C&gt;&#10;- register&#10;- google register&#10;- facebook register&#10;- back">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <TextField fx:id="subscribeCommandLine" onAction="#onCommand" />
+            <Button fx:id="enterButton" defaultButton="true" mnemonicParsing="false" onAction="#onCommand" prefHeight="0.0" prefWidth="16.0" style="-fx-background-color: transparent;" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="495.0" layoutY="36.0" spacing="25.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../images/AppLogo.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="278.0" prefWidth="364.0" spacing="20.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="150.0" text="Name" />
+                        <TextField fx:id="nameField" editable="false" prefWidth="200.0" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="150.0" text="Surname" />
+                        <TextField fx:id="surnameField" editable="false" prefWidth="200.0" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="150.0" text="Email" />
+                        <TextField fx:id="subscribeEmailField" editable="false" prefWidth="200.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="112.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Password" />
+                        <PasswordField fx:id="subscribePasswordField" prefWidth="200.0" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefWidth="150.0" text="User Type" />
+                        <TextField fx:id="userTypeField" prefHeight="24.0" prefWidth="201.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="112.0" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+/*.general{
+    --primary_color: #E1E9F3;
+    --secondary_color: #dbccc0;
+}*/
+
+.button{
+    -fx-background-color: #dacbbe;
+    -fx-text-fill: BLACK;
+    -fx-background-radius: 40;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+    -fx-font-size: 18;
+    -fx-cursor: HAND;
+}
+
+.button:pressed {
+    -fx-background-color: #bfab9b;
+}
+
+.normal_label {
+    -fx-font-family: System;
+    -fx-font-size: 22;
+}
+
+.title_label {
+    -fx-font-family: System;
+    -fx-font-weight: bold;
+    -fx-font-size: 34;
+    -fx-padding : 0 0 0 50;
+}
+
+.subtitle_label {
+    -fx-font-family: System;
+    -fx-font-weight: bold;
+    -fx-font-size: 26;
+}
+
+.internal_pane {
+    -fx-background-color: #E1E9F3;
+    -fx-pref-width: 1250;
+    -fx-pref-height: 650;
+}
+
+.menu_pane {
+    -fx-background-color: #E1E9F3;
+    -fx-pref-width: 1250;
+    -fx-pref-height: 750;
+}
+

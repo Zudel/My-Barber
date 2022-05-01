@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="second_view.client.ClientSeeProductController">
+   <children>
+      <VBox layoutX="42.0" layoutY="103.0" spacing="25.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="292.0" prefWidth="306.0" spacing="10.0">
+               <children>
+                  <Label text="Menu">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane prefHeight="261.0" prefWidth="306.0">
+                     <content>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- add &lt;quantity&gt;&#10;- back">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <TextField fx:id="commandLine" />
+            <Button fx:id="enterButton" defaultButton="true" mnemonicParsing="false" onAction="#onCommand" prefHeight="0.0" prefWidth="16.0" style="-fx-background-color: transparent;" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="396.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/barber_product.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="productNameLabel" layoutX="396.0" layoutY="196.0" text="Nome Prodotto">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="productPriceLabel" layoutX="436.0" layoutY="250.0" text="Prezzo Prodotto" />
+      <ScrollPane layoutX="396.0" layoutY="315.0" prefHeight="262.0" prefWidth="486.0">
+         <content>
+            <Text fx:id="productDescriptionText" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod &#10;tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim &#10;veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &#10;commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit &#10;esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat&#10;non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;&#10;&#10;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
